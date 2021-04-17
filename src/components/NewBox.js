@@ -3,6 +3,7 @@ import NewBoxImages from "./NewBoxImages";
 import ArrowButton from "./ArrowButton";
 import Circles from "./Circles";
 import "../css/NewBox.css";
+
 import image_1 from "../assets/photos/cards 1.jpg";
 import image_2 from "../assets/photos/cards 2.jpg";
 import image_3 from "../assets/photos/cards 3.jpg";
