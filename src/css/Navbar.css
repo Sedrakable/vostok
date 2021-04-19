@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #423432;
+  background-color: #1d1716;
   overflow-x: hidden;
 }
 .Navbar {
@@ -12,7 +12,7 @@ body {
   background-color: #a23337;
   border-top: 6px solid #d6a26f;
   border-bottom: 6px solid #d6a26f;
-  box-shadow: 0 0 24px rgba(0, 0, 0, 0.75);
+  /* box-shadow: 0 0 24px rgba(0, 0, 0, 0.75); */
 }
 
 .left {
