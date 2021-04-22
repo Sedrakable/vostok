@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import NewBoxImages from "./NewBoxImages";
 import ArrowButton from "./ArrowButton";
 import Circles from "./Circles";
+import "../css/NewBox.css";
 
 import image_1 from "../assets/photos/cards 1.jpg";
 import image_2 from "../assets/photos/cards 2.jpg";
@@ -69,7 +70,7 @@ const NewBox = () => {
   };
 
   return (
-    <div className="new_box">
+    <div className="NewBox">
       <div ref={myRef} style={myStyle} className="Pack">
         <NewBoxImages items={items} />
       </div>
@@ -78,6 +79,10 @@ const NewBox = () => {
       <ArrowButton name="next" onClick={() => increaseNum()} />
 
       <div className="Title">
+        <img className="corner TL" src={Corner} />
+        <img className="corner TR" src={Corner} />
+        <img className="corner BR" src={Corner} />
+        <img className="corner BL" src={Corner} />
         <img className="logo_image" src={Title} />
       </div>
 

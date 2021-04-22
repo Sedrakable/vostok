@@ -1,6 +1,6 @@
 import React from "react";
 
-const TabButton = ({ children, href, image }) => {
+const TabButton = ({ className, href, image }) => {
   const onClick = (event) => {
     if (event.metaKey || event.ctrlKey) {
       return;
@@ -14,7 +14,7 @@ const TabButton = ({ children, href, image }) => {
 
   return (
     <a onClick={onClick} href={href}>
-      {children}
+      <img src={image} className={className} />
     </a>
   );
 };
