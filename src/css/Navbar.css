@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #1d1716;
+  background-color: rgb(55, 41, 40);
   overflow-x: hidden;
 }
 .Navbar {
@@ -34,10 +34,30 @@ body {
   flex-grow: 1;
 }
 
-.MainLogo {
-  transform: translateY(2px);
-  width: 196px;
-  height: auto;
+.logo_wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 186px;
+  min-width: 100%;
+  width: 100%;
+}
+
+.back_logo {
+  height: 100%;
+}
+
+.main_logo {
+  position: absolute;
+  width: 100%;
+  height: 140px;
+  transition: 0.2s;
+}
+
+.main_logo:hover {
+  height: 160px;
+  transition: 0.5s;
 }
 
 .TabButton {
@@ -49,18 +69,18 @@ body {
 .ShopButton {
   height: 48px;
   width: auto;
-  animation: hover 3s infinite;
+  animation: hover 6s infinite;
   animation-direction: normal;
 }
 
 @keyframes hover {
   0% {
-    transform: translateY(4px);
+    transform: translate(-4px, -34px);
   }
   50% {
-    transform: translateY(-0px);
+    transform: translate(4px, -34px);
   }
   100% {
-    transform: translateY(4px);
+    transform: translate(-4px, -34px);
   }
 }
