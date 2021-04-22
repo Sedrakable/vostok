@@ -9,6 +9,7 @@ import About from "../assets/illu/About.svg";
 import Contact from "../assets/illu/Contact.svg";
 import Shop from "../assets/illu/Cart.svg";
 import Logo from "../assets/illu/Main Logo.svg";
+import BackLogo from "../assets/illu/Back Logo 2.svg";
 
 const Navbar = () => {
   return (
@@ -17,11 +18,28 @@ const Navbar = () => {
         <TabButton image={Shop} />
       </div>
       <div className="middle">
-        <TabButton href="/news" className={"TabButton"} image={News} />
-        <TabButton href="/products" className={"TabButton"} image={Products} />
-        <TabButton href="/" className={"MainLogo"} image={Logo} />
-        <TabButton href="/about" className={"TabButton"} image={About} />
-        <TabButton href="/contact" className={"TabButton"} image={Contact} />
+        <TabButton href="/news">
+          <img className={"TabButton"} src={News} />
+        </TabButton>
+
+        <TabButton href="/products">
+          <img className={"TabButton"} src={Products} />
+        </TabButton>
+
+        <TabButton href="/">
+          <div class="logo_wrapper">
+            <img className={"back_logo"} src={BackLogo} />
+            <img className={"main_logo"} src={Logo} />
+          </div>
+        </TabButton>
+
+        <TabButton href="/products">
+          <img className={"TabButton"} src={About} />
+        </TabButton>
+
+        <TabButton href="/products">
+          <img className={"TabButton"} src={Contact} />
+        </TabButton>
       </div>
       <div className="right">
         <TabButton href="/shop" className={"ShopButton"} image={Shop} />

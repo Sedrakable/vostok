@@ -1,6 +1,6 @@
 import React from "react";
 
-const TabButton = ({ children, href, image }) => {
+const ProductButton = ({ href }) => {
   const onClick = (event) => {
     if (event.metaKey || event.ctrlKey) {
       return;
@@ -13,10 +13,10 @@ const TabButton = ({ children, href, image }) => {
   };
 
   return (
-    <a onClick={onClick} href={href}>
-      {children}
+    <a className="text name learn" onClick={onClick} href={href}>
+      Learn More
     </a>
   );
 };
 
-export default TabButton;
+export default ProductButton;
